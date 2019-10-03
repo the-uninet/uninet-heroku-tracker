@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "types" : ["@types/node"],
+    "newLine": "lf",
+    "target": "es6",
+    "module": "commonjs",
+    "incremental": true
+  }
+}

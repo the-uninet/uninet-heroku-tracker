@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "uninet-address": "^0.0.0",
     "ws": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.9",
+    "typescript": "^3.6.3"
   }
 }
