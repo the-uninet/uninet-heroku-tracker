@@ -5,5 +5,5 @@
   "env": {},
   "website": "https://github.com/the-uninet/uninet",
   "repository": "https://github.com/the-uninet/uninet",
-  "image": "heroku/nodejs"
+  "stack": "container"
 }
