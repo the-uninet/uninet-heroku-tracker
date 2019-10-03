@@ -1,1 +1,1 @@
-web: npx tsc && node ./dist/index.js
+web: yarn start
