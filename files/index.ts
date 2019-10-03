@@ -1,4 +1,5 @@
 const UninetAddress = require('uninet-address')
+const assert = require('assert').strict
 
 const wss = new (require('ws')).Server({ port: process.env.PORT })
 
@@ -14,8 +15,18 @@ function router_add(addr, low_addr) {
   router[a].add(low_addr)
 }
 
+const enum PacketType {
+  RoutingTable,
+  GetRoutingTable,
+  ProxyMe,
+  Packet,
+}
+
 wss.on('connection', ws => {
-  ws.on('message', message => {
-    message = JSON.parse(message)
+  ws.on('message', msg => {
+    msg = JSON.parse(msg)
+    assert(Array.isArray(msg))
+    assert(msg.length>0)
+    assert.equal(typeof msg[0], 'string')
   })
 })
