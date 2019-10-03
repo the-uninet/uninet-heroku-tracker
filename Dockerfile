@@ -10,6 +10,7 @@ RUN apk add --no-cache nodejs yarn git && \
   git clone https://github.com/the-uninet/uninet-websocket.git /tmp/uninet-websocket && \
   cd /tmp/uninet-websocket && \
   git checkout $VERSION && \
+  rm -fr .git && \
   yarn && \
   yarn build && \
   rm -fr node_modules && \
