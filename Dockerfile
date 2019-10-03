@@ -2,7 +2,7 @@ FROM alpine:edge
 
 RUN apk add --no-cache nodejs yarn
 
-COPY . /workdir
+COPY ./files /workdir
 RUN cd /workdir && yarn && yarn build && yarn install --production
 
 WORKDIR /workdir
