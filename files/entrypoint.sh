@@ -1,2 +1,2 @@
 #!/bin/sh
-exec yarn serve
+exec node entrypoint.js

@@ -2,7 +2,11 @@
   "name": "Uninet Tracker",
   "description": "Uninet Tracker",
   "keywords": [],
-  "env": {},
+  "env": {
+    "DOMAIN": {
+      "description": "Domain of this App(Do not include quotes, \"https://\", \"http://\").\nNormally \"<App Name>.herokuapp.com\""
+    }
+  },
   "website": "https://github.com/the-uninet/uninet",
   "repository": "https://github.com/the-uninet/uninet",
   "stack": "container"
