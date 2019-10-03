@@ -16,6 +16,8 @@ function router_add(addr, low_addr) {
 }
 
 const enum PacketType {
+  Servers,
+  GetServers,
   RoutingTable,
   GetRoutingTable,
   ProxyMe,
@@ -27,6 +29,22 @@ wss.on('connection', ws => {
     msg = JSON.parse(msg)
     assert(Array.isArray(msg))
     assert(msg.length>0)
-    assert.equal(typeof msg[0], 'string')
+    const type: PacketType = msg[0]
+    throw 'WIP'
+    if(type===PacketType.Servers){
+
+    }else if(type===PacketType.GetServers){
+
+    }else if(type===PacketType.RoutingTable){
+
+    }else if(type===PacketType.GetRoutingTable){
+
+    }else if(type===PacketType.ProxyMe){
+
+    }else if(type===PacketType.Packet){
+
+    }else{
+      assert(false)
+    }
   })
 })
