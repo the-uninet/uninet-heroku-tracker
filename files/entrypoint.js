@@ -1,1 +1,4 @@
-require('uninet-websocket').new_server(process.env.PORT, "wss://"+process.env.DOMAIN)
+new (require('uninet-websocket')).Server({
+  listening_port:process.env.PORT,
+  url:"wss://"+process.env.DOMAIN
+})

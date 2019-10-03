@@ -3,7 +3,7 @@ FROM alpine:edge
 ## PORT / DOMAIN will be set by Heroku.
 # ENV PORT=5000
 # ENV DOMAIN="example.com"
-ENV VERSION=4768209ff4d962b81ec177720a4795de21e459ec
+ENV VERSION=45c09395098d4c665ddbd82dc4ba010b53c230af
 
 COPY ./files /app
 RUN apk add --no-cache nodejs yarn git && \
