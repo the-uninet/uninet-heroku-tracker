@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "uninet-address": "^0.0.0",
+    "uninet-address": "^0.0.1",
     "ws": "^7.1.2"
   },
   "devDependencies": {
